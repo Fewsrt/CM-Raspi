@@ -3,6 +3,8 @@ import board
 import adafruit_dht
 import BlynkLib
 
+GPIO.setmode(GPIO.BCM)
+
 BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A​'
 
 # initialize Blynk
