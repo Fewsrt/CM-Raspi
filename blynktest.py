@@ -15,6 +15,7 @@ while True:
         temperature_c = dhtDevice.temperature
         temperature_f = temperature_c * (9/5) + 32
         humidity = dhtDevice.humidity
+        blynk.virtual_wirte(1, str(temperature_c))
         print(
             "Temp: {:.1f} F / {:.1f} C Humidity: {}% ".format(
                 temperature_f, temperature_c, humidity
