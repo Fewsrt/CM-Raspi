@@ -1,7 +1,7 @@
-import blynklib
+import Blynklib
 
 BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A'
-blynk = blynklib.Blynk(BLYNK_AUTH)
+blynk = Blynklib.Blynk(BLYNK_AUTH)
 
 while True:
     blynk.run()
