@@ -1,14 +1,8 @@
 import time
 import board
 import adafruit_dht
-import BlynkLib
 
 GPIO.setmode(GPIO.BCM)
-
-BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A​'
-
-# initialize Blynk
-blynk = BlynkLib.Blynk(BLYNK_AUTH)
 
 dhtDevice = adafruit_dht.DHT22(board.D24)
 
@@ -19,8 +13,6 @@ while True:
         temperature_c = dhtDevice.temperature
         temperature_f = temperature_c * (9/5) + 32
         humidity = dhtDevice.humidity
-        blynk.virtual_write(10, str(temperature_c))
-        blynk.virtual_write(11, str(humidity))
         print(
             "Temp: {:.1f} F / {:.1f} C Humidity: {}% ".format(
                 temperature_f, temperature_c, humidity
