@@ -5,4 +5,4 @@ blynk = blynklib.Blynk(BLYNK_AUTH)
 
 while True:
     blynk.run()
-    blynk.virtual_write(1)
+    blynk.virtual_write(1, 50)
