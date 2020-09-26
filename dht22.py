@@ -2,8 +2,6 @@ import time
 import board
 import adafruit_dht
 
-GPIO.setmode(GPIO.BCM)
-
 dhtDevice = adafruit_dht.DHT22(board.D24)
 
 while True:
