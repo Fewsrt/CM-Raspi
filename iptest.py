@@ -13,5 +13,6 @@ while True:
     ipaddr = s.getsockname()[0]
     host = socket.gethostname()
     blynk.virtual_write(5, str(ipaddr))
+    blynk.virtual_write(6, str(host))
     print ("IP:", ipaddr, " Host:", host)
-    time.sleep(3)
+    time.sleep(10)
