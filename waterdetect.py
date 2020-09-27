@@ -2,7 +2,11 @@ import time
 import blynklib
 import RPi.GPIO as GPIO
 
-BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A'
+# cmsensor1
+#BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A'
+
+# cmsensor2
+BLYNK_AUTH = 'JFDPBMufAg2aRnHmO5ITI9H29aUbZmA1'
 blynk = blynklib.Blynk(BLYNK_AUTH)
 
 channel = 23
@@ -18,6 +22,6 @@ while True:
     else:
         print("Water Detected!")
         blynk.virtual_write(9, "Water Detected!")
-        blynk.virtual_write(10, 255) 
+        blynk.virtual_write(10, 255)
 
 time.sleep(500)
