@@ -48,6 +48,7 @@ def readLight(addr=DEVICE):
 def main():
 
     while True:
+        blynk.run()
         lightLevel = readLight()
         blynk.virtual_write(3, "Light Level : " + str(lightLevel) + " lx")
         print("Light Level : " + format(lightLevel, '.2f') + " lx")
