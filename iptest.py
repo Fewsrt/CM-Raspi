@@ -23,4 +23,4 @@ while True:
     blynk.virtual_write(8, cpu)
     print(cpu.temperature)
     print ("IP:", ipaddr, " Host:", host)
-    time.sleep(3600)
+    time.sleep(5)
