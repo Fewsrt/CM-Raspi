@@ -12,11 +12,11 @@ GPIO.setup(channel, GPIO.IN)
 while True:
     if GPIO.input(channel):
         print("No Water Detected!")
-        blynk.virtual_write(0, "No Water Detected!")
+        blynk.virtual_write(9, "No Water Detected!")
         blynk.virtual_write(1, 0)
     else:
         print("Water Detected!")
-        blynk.virtual_write(0, "Water Detected!")
+        blynk.virtual_write(9, "Water Detected!")
         blynk.virtual_write(1, 255) 
 
 time.sleep(5)
