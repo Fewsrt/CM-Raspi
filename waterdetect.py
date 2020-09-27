@@ -10,6 +10,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(channel, GPIO.IN)
 
 while True:
+    blynk.run()
     if GPIO.input(channel):
         print("No Water Detected!")
         blynk.virtual_write(9, "No Water Detected!")
