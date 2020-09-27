@@ -20,4 +20,4 @@ while True:
         blynk.virtual_write(9, "Water Detected!")
         blynk.virtual_write(10, 255) 
 
-time.sleep(5)
+time.sleep(500)
