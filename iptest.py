@@ -3,9 +3,6 @@ import time
 import blynklib
 from gpiozero import CPUTemperature
 
-cpu = CPUTemperature()
-print(cpu.temperature)
-
 BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A'
 blynk = blynklib.Blynk(BLYNK_AUTH)
 
