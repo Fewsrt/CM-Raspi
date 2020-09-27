@@ -51,7 +51,7 @@ def main():
         blynk.run()
         lightLevel = readLight()
         blynk.virtual_write(3, "Light Level : " + str(lightLevel) + " lx")
-        blynk.virtual_write(4, lightLevel)
+        blynk.virtual_write(4, format(lightLevel, '.2f'))
         print("Light Level : " + format(lightLevel, '.2f') + " lx")
         time.sleep(3)
 
