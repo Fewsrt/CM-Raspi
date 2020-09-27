@@ -15,4 +15,4 @@ while True:
     blynk.virtual_write(5, str(ipaddr))
     blynk.virtual_write(6, str(host))
     print ("IP:", ipaddr, " Host:", host)
-    time.sleep(10)
+    time.sleep(3600)
