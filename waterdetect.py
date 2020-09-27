@@ -22,3 +22,6 @@ def callback(channel):
 
 GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)
 GPIO.add_event_callback(channel, callback)
+
+while True:
+    blynk.run()
