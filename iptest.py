@@ -8,9 +8,8 @@ blynk = blynklib.Blynk(BLYNK_AUTH)
 
 while True:
     blynk.run()
-    readip()
-    blynk.virtual_write(5, str(ipaddr))
-    blynk.virtual_write(6, str(host))
+    ip = readip()
+    blynk.virtual_write(5, str(ip))
 
 
 def readip(ipaddr, host):
@@ -21,4 +20,4 @@ def readip(ipaddr, host):
     host = socket.gethostname()
     print ("IP:", ipaddr, " Host:", host)
     time.sleep(3600)
-    return readip(ipaddr, host)
+    return readip(ipaddr)
