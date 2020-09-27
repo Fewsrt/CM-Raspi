@@ -25,3 +25,4 @@ GPIO.add_event_callback(channel, callback)
 
 while True:
     blynk.run()
+    callback()
