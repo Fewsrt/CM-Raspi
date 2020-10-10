@@ -3,7 +3,6 @@ import board
 import blynklib
 import adafruit_dht
 
-time.sleep(10)
 # cmsensor1
 BLYNK_AUTH = 'nD-SwPo3-WpMrvAbdksIFa4YnP14l9-A'
 
